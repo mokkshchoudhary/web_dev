@@ -1,0 +1,61 @@
+body{
+    background-color:white;
+    border:3px solid black
+}
+h1{
+    color:black;
+    font-family:Helvetica;
+    border: 3px solid rgb(231, 133, 20);
+    border-radius:10px;
+    text-shadow: 2px 2px 5px red, -2px 2px 5px blue
+}
+.odd{
+    color:brown;
+    font-family:Helvetica;
+    font-size:large;
+    font-weight:bold;
+    border: 3px solid rgb(22, 19, 218);
+    border-radius:10px;
+}
+.even{
+    color:orange;
+    font-family:Helvetica;
+    border-bottom:3px solid beige;
+    border-left:3px solid aqua;
+    border-top:3px solid brown;
+    border-right:3px solid blue;
+}
+#p5{
+    font-family:Helvetica;
+    font-size:large;
+    font-weight:bold;
+}
+.box{
+    border:5px solid;
+    font-size:5em;
+    width: 250px;
+    height: 250px;
+}
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color:grey;
+    box-shadow: 5px 5px 6px black
+}
+#box2{
+    background-color:aqua;
+    float:left;
+    margin-right:25px;
+    margin-top: 25px
+}
+#box3{
+    background-color:red;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+div{
+    border:2px solid;
+    height: 75px;
+    overflow:scroll
+}
