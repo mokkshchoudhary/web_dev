@@ -1,0 +1,88 @@
+.container{
+    display:flex;
+    border: 10px solid black;
+    height: 90vh;
+    flex-wrap:wrap;
+    justify-content: space-evenly
+}
+.box{
+    width:150px;
+    height:150px;
+    font-size:8em;
+    text-align:center;
+    border-radius:15px
+}
+#box1{
+    background-color:yellowgreen;
+    animation-name: grow;
+    animation-duration: 3s;
+}
+#box2{
+    background-color:hsl(0, 46%, 52%);
+    transform: rotate(45deg) translateY(100px);
+    animation-name: slideright;
+    animation-name:grow;
+    animation-duration: 3s;
+}
+#box3{
+    background-color:green;
+    animation-name: rotate;
+    animation-duration: 3s;
+}
+#box4{
+    background-color:yellow;
+    transform:skewX(45deg) translateX(50px);
+    animation-name: slideleft;
+    animation-duration: 3s;
+}
+#box5{
+    background-color:hsl(0, 46%, 52%);
+    transform: rotate(45deg) translateY(100px);
+    animation-name:grow;
+    animation-duration: 3s;
+}
+#box6{
+    background-color:hsl(177, 57%, 47%);
+    transform: rotate(45deg) translateY(100px);
+    animation-name: slideright;
+    animation-name:grow;
+    animation-duration: 3s;
+}
+#box7{
+    background-color:hsl(204, 47%, 19%);
+    transform: rotate(45deg) translateY(100px);
+    animation-name: glow;
+    animation-duration: 3s;
+}
+#box8{
+    background-color:hsl(276, 53%, 51%);
+    transform: rotate(45deg) translateY(100px);
+    animation-name: colorchange;
+    animation-duration: 3s;
+}
+@keyframes slideleft{
+    from{transform: translateX(100px)}
+}
+@keyframes slideright{
+    to{transform: translateX(100px)}
+}
+@keyframes rotate{
+    50%{transform: rotateZ(360deg)}
+}
+@keyframes grow{
+    50%{transform: scale(2,2)}
+}
+@keyframes fade{
+    50%{opacity:0}
+}
+@keyframes colorchange{
+    0%{background-color: red}
+    25%{background-color: blue}
+    50%{background-color: green}
+    75%{background-color: yellow}
+    100%{background-color: purple}
+}
+
+@keyframes glow{
+    50%{box-shadow: 2px 2px 80px rgb(0, 0, 0)}
+}
